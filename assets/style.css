@@ -14,6 +14,8 @@ body {
     width: 80%;
 
 }
+
+/*Header - found a template online to create a smaller width for header*/
 .header {
     width: 100%;
     max-width: 640px;
@@ -34,6 +36,8 @@ body {
     display: flex;
     gap: 8px;
 }
+
+/*Nav bar is now on the same header as header*/
 .header ul{
     list-style-type: none;
     margin: 0;
@@ -44,7 +48,8 @@ body {
     font-size: 18px;
 }
 
-.aboutme {
+/*photo and about me section*/
+#aboutme {
     color: #EADDCA;
     justify-content: center;
     align-items: center;
@@ -88,6 +93,8 @@ body {
     
 }
 
+
+/*contacts page*/
 aside {
   color: #EADDCA;
   width: 300px;
@@ -99,6 +106,15 @@ aside {
 
 }
 
+#contacts {
+    font-size: large;
+    font-weight: bold;
+}
+
+.section-about-project {
+    margin: auto;
+    height: 300px;
+}
 
 .contacts {
     clear: both;
@@ -117,3 +133,37 @@ aside {
     margin-bottom: 10px;
     text-align: center;
 }
+
+.section-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-projects h2 {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin-top: 24px;
+    justify-content: flex-start;
+}
+.section-projects div {
+    width: 400px;
+    height: 400px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin: 20px 20px;
+}
+   
+@media screen and (min-width: 768px) 
+    .section-projects {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+} 
+    
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
