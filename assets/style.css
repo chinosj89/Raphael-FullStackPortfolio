@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
    } 
 
 html {
-    background-color: #14182c;
+    background-color: #f2f2f2;
 
 }
 body {
@@ -18,23 +19,26 @@ body {
 /*Header - found a template online to create a smaller width for header*/
 .header {
     width: 100%;
-    max-width: 640px;
-    margin: 20px auto -20px;
+    max-width: 800px;
+    margin: 5px auto 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid white;
+    border-top: 1px solid rgb(202, 202, 202);
+    background-color: #14182c;
+    border-radius: 5px;
 
 }
 .header h1 {
     display: inline-block;
-    font-size: 33px;
+    font-size: 48px;
     font-weight: bold;
-    color:#EADDCA; 
+    color:#f2f2f2; 
 }
 .header nav {
     display: flex;
     gap: 8px;
+    font-size: 35px;
 }
 
 /*Nav bar is now on the same header as header*/
@@ -50,71 +54,73 @@ body {
 
 /*photo and about me section*/
 #aboutme {
-    color: #EADDCA;
+    color: #14182c;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #14182c;
+    text-align: center;
+    font-size: 24px;
 }
 
 .exciting-text::before{
     content: "SEE MY PROGRESS HERE:";
-    color: purple;
+    color: rgb(194, 8, 194);
     font: Neue Haas Unica;
-    font-size: large;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .myimage {
     border-radius: 50%;
     border-width: 8px;
-    border-style: solid;
-    color: tan;
+    border-style: none;
     width: 300px;
     height: 300px;
     background-image: url(./images/Portfolio\ Image.png);
     background-position: 50% 50%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-   
+    display: flex;   
+    position: relative;
+    
 }
-#header2 {
+/*My projects objective section*/
+
+.section-about-project {
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#EADDCA;font-size: 20px;
+    color:white;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 640px;
     margin: 20px auto -20px;
-    
+    margin-bottom: 20px;
+    background-color: #14182c;
+    list-style-type:none;
 }
-
 
 /*contacts page*/
 .aside {
-  color: #EADDCA;
+  color: #14182c;
   width: 300px;
-  border-right: 1px solid white;
+  border-right: 1px solid #14182c;
   padding: 50px;
   margin-left: 20px;
   margin-right: 0;
   margin-top: 30px;
   float: left;
+  
 }
 
 #contacts {
-    font-size: large;
+    font-size: 40px;
     font-weight: bold;
 }
 
-.section-about-project {
-    margin: auto;
-    height: 300px;
-}
+
 
 .contacts {
     clear: both;
@@ -143,13 +149,19 @@ body {
     flex-wrap: wrap;
 }
 
+.section-img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
 
 .section-projects-div {
-    border: 1px solid white;
+    border: 1px solid #14182c;
     margin: 20px;
     float: right;
     width: 300px;
     height: 300px;
+    padding: 0px;
 }
 .section-projects-header {
     border-radius: 5px;
@@ -158,5 +170,10 @@ body {
     background-color: #14182c;
     position: relative;
     color: white;
+    margin-bottom: -5px;
 
+}
+
+footer {
+    text-align: center;
 }
