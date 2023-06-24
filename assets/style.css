@@ -188,11 +188,21 @@ footer {
     .header {
         display: inline;
     }
+    #aboutme {
+        width: 80%;
+    }
 } 
 
 @media screen and (min-width = 764px){
     body {
         width: 100%;
     }
-   
+    #aboutme {
+        width: 100%;
+    }
+
+   aside p {
+        width: 80%;
+   }
+
 } 
