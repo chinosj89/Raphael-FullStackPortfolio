@@ -47,4 +47,6 @@ When this application is clicked, it will go to my first Assignment in week 1 of
 # ISSUES: 
 I think the biggest issues i have is in CSS, figuring out how to make the site more creative is the most difficult part. I had to go online and somewhat draw as much inspiration without copying anyone's work and still making sure I understand what I am adding to my code. When i run into new elements, I make sure I full understand them first before implementing in my site. Overall, being creative is a difficulty for me, but I was able to create a site based off the acceptance criteria. 
 
-Deployed site is as follows: 
+Also had an issues with Github where my CSS was not uploading; fixed!
+
+Deployed site is as follows: https://chinosj89.github.io/Raphael-FullStackPortfolio/
