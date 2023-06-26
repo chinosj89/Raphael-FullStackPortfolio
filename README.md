@@ -38,3 +38,13 @@ When this application is clicked, it will go to my first Assignment in week 1 of
  ```
  - I realized that my changes weren't being done because of the = sign, so when I changed it to a : , all of my changes were starting to show
 
+## Smaller Screen :
+![Alt text](image-8.png)
+
+## Tablet Size Screen :
+![Alt text](image-9.png)
+
+# ISSUES: 
+I think the biggest issues i have is in CSS, figuring out how to make the site more creative is the most difficult part. I had to go online and somewhat draw as much inspiration without copying anyone's work and still making sure I understand what I am adding to my code. When i run into new elements, I make sure I full understand them first before implementing in my site. Overall, being creative is a difficulty for me, but I was able to create a site based off the acceptance criteria. 
+
+Deployed site is as follows: 
