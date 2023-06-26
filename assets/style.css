@@ -12,40 +12,42 @@ body {
 }
 /*Header - found a template online to create a smaller width for header*/
 .header {
-    width: 100%;
-    max-width: 740px;
+    max-width: 800px;
     margin: 5px auto 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-
+    font-size: 2.5vh;
+    font-weight: bold;
+    color:#f2f2f2; 
 }
-.header h1 {
+/*.header h1 {
     display: inline-block;
     font-size: 48px;
     font-weight: bold;
     color:#f2f2f2; 
 }
-.header nav {
-    display: flex;
-    gap: 8px;
-    font-size: 35px;
-}
+
 
 /*Nav bar is now on the same header as header*/
-.header ul{
+/*.header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+}  
+    */
+
 .header li {
-    display: inline;
+    display: inline-block;
     font-size: 18px;
+    list-style-type: none;
+    color:#f2f2f2;
+    text-decoration: none;
     
 }
 .header li a {
-    color:#f2f2f2;
+    color:white;
     text-decoration: none;
     margin: 5px;
 }
@@ -58,19 +60,18 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid white;
     text-align: center;
     font-size: 24px;
 }
 
 .exciting-text::before{
     content: "SEE MY PROGRESS HERE:";
-    color: #ffffff;
+    color: #fccb06;
     font: Neue Haas Unica;
     font-size: 30px;
     font-weight: bold;
 }
-
+/*found a template online where the avatar was created in a circle while not losing its sizing. So my image remains the same regardless of screen size*/
 .myimage {
     border-radius: 50%;
     border-width: 8px;
@@ -85,53 +86,24 @@ body {
     position: relative;
     
 }
-/*My projects objective section*/
+/*Objective of the*/
 
 .section-about-project {
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 20px;
-    background-color: #E3E3E1;
-    color:#1C1C1C;
+    background-color: #333333;;
+    color:white;
     list-style-type:none;
     padding: 20px;
 }
 
 .section-about-project h2 {
     margin: 10px;
-}
-
-/*contacts page*/
-.aside {
-  color: #333333;
-  background-color: #f2f2f2;
-  padding: 50px;
-  width: 100%;
-  justify-content: center;
-  background-color:#5A5A5A;
-  
-}
-.aside a {
-    text-decoration: none;
-    color:black;
-}
-
-
-.contacts {
-    clear: both;
-    float: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    margin-left: 5px;
-    justify-content: center;
-}
-aside {
-   text-align: center;
 }
 
 
@@ -162,6 +134,7 @@ aside {
     padding: 10px;
     box-shadow: 2px 1px 1px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .section-projects-header {
@@ -175,34 +148,59 @@ aside {
     height: 50px;
 
 }
+/*contacts page - moved to the bottom where originally it floated to the left of the projects but due to responsive issues, i decided to move it down to the bottom of the page*/
+.aside {
+  color: #333333;
+  background-color: #f2f2f2;
+  padding: 50px;
+  width: 100%;
+  justify-content: center;
+  background-color:#5A5A5A;
+  
+}
+.aside a {
+    text-decoration: none;
+    color:#fccb06;
+}
+
+
+.contacts {
+    clear: both;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin-left: 5px;
+    justify-content: center;
+}
+aside {
+   text-align: center;
+}
+
+
 
 footer {
     text-align: center;
     background-color:#5A5A5A;
     padding-bottom: 10px;
 }
-@media screen and (min-width = 992px){
+/*also noticed my biggest mistake in media screen was using a = sign rather than ":" when defining pixels.*/
+/*was able to make the header vertical to each other rather than horizontal while retaining the nav under 1 line*/
+@media screen and (max-width: 768px) {
+    .header, .header ul {
+      flex-direction: column; 
+      align-items: stretch; 
+      text-align: center; 
+      padding: 0%;
+    }
     body {
         width: 100%;
+        margin: 5px;
     }
-    .header {
-        display: inline;
+}
+/*the text in the objective was overflowing so lowered the font size*/
+@media screen and (max-width: 480px) {
+    .section-about-project {
+        font-size: 16px;
+        
     }
-    #aboutme {
-        width: 80%;
-    }
-} 
-
-@media screen and (min-width = 764px){
-    body {
-        width: 100%;
-    }
-    #aboutme {
-        width: 100%;
-    }
-
-   aside p {
-        width: 80%;
-   }
-
-} 
+}

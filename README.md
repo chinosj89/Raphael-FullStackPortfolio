@@ -32,3 +32,9 @@ When this application is clicked, it will go to my first Assignment in week 1 of
 
 ### Responsive Layout
 * Layout is responsive when clicked on a smaller screen with the projects placed on a flexbox
+* Also realized my biggest mistake when creating media queries:
+ ```
+ @media screen and (min-width = 992px)
+ ```
+ - I realized that my changes weren't being done because of the = sign, so when I changed it to a : , all of my changes were starting to show
+
